@@ -1,0 +1,18 @@
+@font-face {
+  src: url("../fonts/Gilroy-ExtraBold.otf");
+  font-family: "GilroyBold";
+}
+.sticker_NEW {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sticker_NEW::before {
+  content: "NEW";
+  font-family: "GilroyBold";
+  color: rgba(0, 0, 0, 0.3);
+}
