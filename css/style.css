@@ -2,17 +2,24 @@
   src: url("../fonts/Gilroy-ExtraBold.otf");
   font-family: "GilroyBold";
 }
-.sticker_NEW {
-  width: 62px;
+.newProduct {
+  position: relative;
+}
+.newProduct:after {
   height: 62px;
+  width: 62px;
+  box-sizing: border-box;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sticker_NEW::before {
+  background-color: transparent;
   content: "NEW";
   font-family: "GilroyBold";
   color: rgba(0, 0, 0, 0.3);
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -35px;
+  left: 185px;
+  bottom: 0;
+  right: 0;
