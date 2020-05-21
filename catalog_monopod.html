@@ -11,43 +11,43 @@
         <a href="index.html">DEVICE</a>  <!--logo-->
         <ul>  <!--catalog, delivery, guarantee, contacts list-->
           <li>  <!--catalog and its sub menu-->
-            <a href="">каталог товаров</a>
+            <a href="javascript:void(0);">каталог товаров</a>
             <span></span>  <!--future "plus" icon-->
             <ul>
               <li>
                 <ul>
-                  <li><a href="">Виртуальная реальность</a></li>
+                  <li><a href="javascript:void(0);">Виртуальная реальность</a></li>
                   <li><a href="catalog_monopod.html">Моноподы для селфи</a></li>
-                  <li><a href="">Экшн-камеры</a></li>
+                  <li><a href="javascript:void(0);">Экшн-камеры</a></li>
                 </ul>
               </li>
               <li>
                 <ul>
-                  <li><a href="">Фитнес-браслеты</a></li>
-                  <li><a href="">Умные часы</a></li>
+                  <li><a href="javascript:void(0);">Фитнес-браслеты</a></li>
+                  <li><a href="javascript:void(0);">Умные часы</a></li>
                 </ul>
               </li>
               <li>
                 <ul>
-                  <li><a href="">Квадрокоптеры</a></li>
+                  <li><a href="javascript:void(0);">Квадрокоптеры</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="">доставка</a></li>
-          <li><a href="">гарантия</a></li>
-          <li><a href="">контакты</a></li>
+          <li><a href="javascript:void(0);">доставка</a></li>
+          <li><a href="javascript:void(0);">гарантия</a></li>
+          <li><a href="javascript:void(0);">контакты</a></li>
         </ul>
           <div><span><!--future "search" icon--></span><input type="text" placeholder="Поиск по сайту"></div>
           <div> <!--user acc control div-->
           </div>
-            <a href=""><!--acc page anchor-->
+            <a href="javascript:void(0);"><!--acc page anchor-->
               <span><!--future "user" icon--></span>
               <span class="userName">Валентин Петухов</span>
             </a>
-            <a href="">Выйти</a>
-          <a href=""><span><!--future "compare" icon--></span>Сравнить</a>
-          <a href=""><span><!--future "cart" icon--></span>Корзина</a>
+            <a href="javascript:void(0);">Выйти</a>
+          <a href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+          <a href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
       </nav>
     </header>
     <main>
@@ -55,90 +55,69 @@
         <h1>Моноподы для селфи</h1>
         <ul>
           <li><a href="index.html" title="вернуться на Главную">Главная</a></li>
-          <li><a href="" title="вернуться в Каталог товаров">Каталог товаров</a></li>
+          <li><a href="javascript:void(0);" title="вернуться в Каталог товаров">Каталог товаров</a></li>
           <li><a title="Вы здесь">Моноподы для селфи</a></li>
         </ul>
       </section>
-      <div>  <!--all filter related stuff div-->
-        <div>
-          <p>фильтр:</p>
-        </div>  <!--filter heading box-->
-        <div>  <!--filter options box-->
-          <ul>  <!--filter options list-->
-            <li>
-              <p>Стоимость</p>
-              <!--future price range here-->
-            </li>
-            <li>
-              <p>Цвет</p>
-                <ul>  <!--color options list-->
-                  <li>
-                    <label><input type="checkbox">Чёрный</label>
-                  </li>
-                  <li>
-                    <label><input type="checkbox">Белый</label>
-                  </li>
-                  <li>
-                    <label><input type="checkbox">Синий</label>
-                  </li>
-                  <li>
-                    <label><input type="checkbox">Красный</label>
-                  </li>
-                  <li>
-                    <label><input type="checkbox">Розовый</label>
-                  </li>
-                </ul>
-            </li>
-            <li>
-              <p>Bluetooth</p>
-              <label><input type="radio" name="Bluetooth">Есть</label>
-              <label><input type="radio" name="Bluetooth">Нет</label>
-            </li>
-        </ul>
-        <button type="button">показать</button>
-        </div>
-      </div>
-      <div>  <!--sorting-->
+      <form method="get">  <!--filter-->
+        <p>фильтр:</p>
+        <p>Стоимость</p>
+        <div><!--price_range_slider--></div>
+        <br>
+        <fieldset>
+          <legend>Цвет</legend>
+            <label><input type="checkbox" name="black">Чёрный</label><br>
+            <label><input type="checkbox" name="white">Белый</label><br>
+            <label><input type="checkbox" name="blue">Синий</label><br>
+            <label><input type="checkbox" name="red">Красный</label><br>
+            <label><input type="checkbox" name="pink">Розовый</label><br>
+        </fieldset>
+        <p>Bluetooth</p>
+        <label><input type="radio" name="Bluetooth" value="yes">Есть</label>
+        <br>
+        <label><input type="radio" name="Bluetooth" value="no">Нет</label>
+        <br>
+        <button type="submit">показать</button>
+      </form>
+      <form method="get">  <!--sorting-->
         <p>сортировка:</p>
         <ul>
-          <li><button type="button">По цене</button></li>
-          <li><button type="button">По типу</button></li>
-          <li><button type="button">По популярности</button></li>
+          <li><button value="sort_by_price">По цене</button></li>
+          <li><button value="sort_by_type">По типу</button></li>
+          <li><button value="sort_by_popularity">По популярности</button></li>
         </ul>
         <ul>  <!--ascending order-->
-          <li><button type="button"></button></li>
-          <li><button type="button"></button></li>
+          <li><button value="ascending"></button></li>
+          <li><button value="descending"></button></li>
         </ul>
-      </div>
+      </form>
       <section> <!--products display section-->
         <ul> <!--the products-->
           <li>
-            <a href=""><img src="amature_selfie_stick.png" width="360" height="380" alt="Любительская селфи-палка"><p>Любительская селфи-палка</p></a>
+            <a href="javascript:void(0);"><img src="amature_selfie_stick.png" width="360" height="380" alt="Любительская селфи-палка"><h2>Любительская селфи-палка</h2></a>
             <p>500 руб.</p>
           </li>
           <li>
-            <a href=""><img src="pro_selfie_stick.png" width="360" height="380" alt="Профессиональная селфи-палка"><p>Профессиональная селфи-палка</p></a>
+            <a href="javascript:void(0);"><img src="pro_selfie_stick.png" width="360" height="380" alt="Профессиональная селфи-палка"><h2>Профессиональная селфи-палка</h2></a>
             <p>1500 руб.</p>
           </li>
           <li>
-            <a href=""><img src="underwater_selfie_stick.png" width="360" height="380" alt="Непотопляемая селфи-палка"><p>Непотопляемая селфи-палка</p></a>
+            <a href="javascript:void(0);"><img src="underwater_selfie_stick.png" width="360" height="380" alt="Непотопляемая селфи-палка"><h2>Непотопляемая селфи-палка</h2></a>
             <p>2500 руб.</p>
           </li>
           <li>
-            <a class="newProduct" href=""><img src="follow_me_selfie_stick.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»"><p>Селфи-палка «Следуй за мной»</p></a>
+            <a class="newProduct" href="javascript:void(0);"><img src="follow_me_selfie_stick.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»"><h2>Селфи-палка «Следуй за мной»</h2></a>
             <p>4900 руб.</p>
           </li>
         </ul>
       </section>
       <div>  <!--pagination-->
-        <ul>
-          <li><a>назад</a></li>
-          <li><a href="">вперед</a></li>
-        </ul>
+        <a>назад</a>
+        <a href="javascript:void(0);">вперед</a>
         <ul>
           <li><a>1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
+          <li><a href="javascript:void(0);">2</a></li>
+          <li><a href="javascript:void(0);">3</a></li>
         </ul>
       </div>
     </main>
@@ -148,19 +127,19 @@
         <p>г.Москва, ул.Строителей, 15</p>
         <p>Тел.: +7 (495) 495-95-95</p>
         <ul>
-          <li><a href="">доставка</a></li>
-          <li><a href="">гарантия</a></li>
-          <li><a href="">контакты</a></li>
+          <li><a href="javascript:void(0);">доставка</a></li>
+          <li><a href="javascript:void(0);">гарантия</a></li>
+          <li><a href="javascript:void(0);">контакты</a></li>
         </ul>
-        <a href=""><span><!--future "user" icon--></span>Войти</a>
-        <a href=""><span><!--future "compare" icon--></span>Сравнить</a>
-        <a href=""><span><!--future "cart" icon--></span>Корзина</a>
+        <a href="javascript:void(0);"><span><!--future "user" icon--></span>Войти</a>
+        <a href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+        <a href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
       </nav>
       <span></span><!--future huge yellow dash here-->
       <ul>
-        <li><span><a href="" title="Мы на Facebook">Facebook</a></span></li>
-        <li><span><a href="" title="Мы в Instagram">Instagram</a></span></li>
-        <li><span><a href="" title="Мы в Twitter">Twitter</a></span></li>
+        <li><span><a href="javascript:void(0);" title="Мы на Facebook">Facebook</a></span></li>
+        <li><span><a href="javascript:void(0);" title="Мы в Instagram">Instagram</a></span></li>
+        <li><span><a href="javascript:void(0);" title="Мы в Twitter">Twitter</a></span></li>
       </ul>
       <span><a href="https://up.htmlacademy.ru/htmlcss/28" title="HTML Academy">HTML Academy</a></span>
     </footer>
