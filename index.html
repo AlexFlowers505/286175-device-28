@@ -3,68 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <a aria-label="на главную">DEVICE</a>  <!--logo-->
-        <ul>  <!--catalog, delivery, guarantee, contacts list-->
-          <li>  <!--catalog and its sub menu-->
-            <a href="javascript:void(0);">каталог товаров</a>
-            <span></span>  <!--future "plus" icon-->
-            <ul>
-              <li>
-                <ul>
-                  <li><a href="javascript:void(0);">Виртуальная реальность</a></li>
-                  <li><a href="catalog_monopod.html">Моноподы для селфи</a></li>
-                  <li><a href="javascript:void(0);">Экшн-камеры</a></li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li><a href="javascript:void(0);">Фитнес-браслеты</a></li>
-                  <li><a href="javascript:void(0);">Умные часы</a></li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li><a href="javascript:void(0);">Квадрокоптеры</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0);">доставка</a></li>
-          <li><a href="javascript:void(0);">гарантия</a></li>
-          <li><a href="javascript:void(0);">контакты</a></li>
-        </ul>
-        <form action="https://echo.htmlacademy.ru/courses" method="get">
-          <span><!--future "search" icon--></span>
-          <input type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+    <header class="main-header">
+      <nav class="nav-section header-nav">
+        <a class="logo" aria-label="на главную"><img src="img/content/DEVICE.svg" width="163" height="35" alt="DEVICE"></a>
+        <div class="catalog-submenu">
+          <a href="javascript:void(0);">Виртуальная реальность</a>
+          <a href="catalog_monopod.html">Моноподы для селфи</a>
+          <a href="javascript:void(0);">Экшн-камеры</a>
+          <a href="javascript:void(0);">Фитнес-браслеты</a>
+          <a href="javascript:void(0);">Умные часы</a>
+          <a href="javascript:void(0);">Квадрокоптеры</a>
+        </div>
+        <div class="site-nav header-nav">
+          <a href="javascript:void(0);">каталог товаров</a>
+          <a href="javascript:void(0);">доставка</a>
+          <a href="javascript:void(0);">гарантия</a>
+          <a href="javascript:void(0);">контакты</a>
+        </div>
+        <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <span><!--search_icon--></span>
+          <input required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+          <button type="submit">найти</button>
         </form>
-        <a href="javascript:void(0);"><span><!--future "user" icon--></span>Войти</a>
-        <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-        <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+        <div class="user-nav header-nav">
+          <a href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
+          <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+          <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+        </div>
       </nav>
     </header>
-    <main>
+     <main>
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-      <section>  <!--products ad slider-->
+      <section class="ad-slider-section">
         <h2 class="visually-hidden">Топовые товары</h2>
-        <div><!--future huge white dash--></div>
-        <ul>  <!--slider controls-->
+        <ul class="slider-controls">
           <li><button aria-label="первый слайд" type="button"></button></li>
           <li><button aria-label="второй слайд" type="button"></button></li>
           <li><button aria-label="третий слайд" type="button"></button></li>
         </ul>
-        <ul>  <!--the very products-->
-          <li>  <!--8 meters selfie stick-->
+        <ul class="slides">
+          <li class="slide">
             <p>01</p>
             <a aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_monopod.png" alt="8-метровая селфи-палка" width="384" height="486"></a>
             <a aria-label="Перейти на страницу товара" href="javascript:void(0);">Делай селфи, как Бен Стиллер!</a>
             <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <ul>
+            <ul class="characteristics">
               <li>8,5 м</li>
               <li>5 кг</li>
               <li>Карбон</li>
@@ -74,36 +62,36 @@
             </ul>
             <a href="javascript:void(0);">подробнее</a>
           </li>
-          <li>  <!--fitness tracker-->
+          <li class="slide">  <!--fitness tracker-->
             <p>02</p>
             <a aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_tracker.png" alt="фитнес-браслет 001" width="345" height="485"></a><!--add dimensions-->
             <a aria-label="Перейти на страницу товара" href="javascript:void(0);">Худеем правильно!</a>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не<br>
                пропускать занятия и соблюдать диету.</p>
-              <ul>
-                <li>48 часов</li>
-                <li>Без подзарядки</li>
-              </ul>
+            <ul class="characteristics">
+              <li>48 часов</li>
+              <li>Без подзарядки</li>
+            </ul>
             <a href="javascript:void(0);">подробнее</a>
           </li>
-          <li>  <!--quadcopter-->
+          <li class="slide">  <!--quadcopter-->
             <p>03</p>
             <a aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_quadrocopter.png" alt="Квадрокоптер с лазером" width="526" height="334"></a><!--add dimensions-->
             <a aria-label="Перейти на страницу товара" href="javascript:void(0);">Порхает как бабочки, жалит как пчела!</a>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным<br>
                лазером, замаскированным под обычную камеру.</p>
-              <ul>
-                <li>800 м</li>
-                <li>50 м</li>
-                <li>Дальность полета</li>
-                <li>Радиус поражения</li>
-              </ul>
+            <ul class="characteristics">
+              <li>800 м</li>
+              <li>50 м</li>
+              <li>Дальность полета</li>
+              <li>Радиус поражения</li>
+            </ul>
             <a href="">подробнее</a>
           </li>
         </ul>
       </section>
-      <section>  <!--one more catalog section-->
-        <ul>
+      <section class="extra-catalog-section">
+        <ul class="extra-catalog">
           <li><h3><a href="javascript:void(0);"><span><!--cathegory icon--></span>Виртуальная реальность</a></h3></li>
           <li><h3><a href="catalog_monopod.html"><span><!--cathegory icon--></span>Моноподы для селфи</a></h3></li>
           <li><h3><a href="javascript:void(0);"><span><!--cathegory icon--></span>Экшн-камеры</a></h3></li>
@@ -112,24 +100,24 @@
           <li><h3><a href="javascript:void(0);"><span><!--cathegory icon--></span>Квадрокоптеры</a></h3></li>
         </ul>
       </section>
-      <section>  <!--features-->
-        <ul>  <!--headings list-->
+      <section class="features">
+        <ul class="features-names">  <!--headings list-->
           <li><button type="button">доставка</button></li>
           <li><button type="button">гарантия</button></li>
           <li><button type="button">кредит</button></li>
         </ul>
-        <ul>  <!--the very features list-->
+        <ul class="features-description">  <!--the very features list-->
           <li>
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             <span><!--icon--></span>
           </li>
-          <li>
+          <li class="visually-hidden">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             <span><!--icon--></span>
           </li>
-          <li>
+          <li class="visually-hidden">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для
                вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -137,8 +125,7 @@
           </li>
         </ul>
       </section>
-      <section>  <!--partners-->
-        <h2 class="visually-hidden">Наши партнеры</h2>
+      <section class="partners-section">
         <ul>
           <li><a href="javascript:void(0);" title="DJI"><img src="DJI_logo.png" width="260" height="100" alt="DJI"></a></li>
           <li><a href="javascript:void(0);" title="SP Gadgets"><img src="SP_Gadgets_logo.png" width="260" height="100" alt="SP Gadgets"></a></li>
@@ -146,32 +133,30 @@
           <li><a href="javascript:void(0);" title="VIVE"><img src="VIVE_logo.png" width="260" height="100" alt="VIVE"></a></li>
         </ul>
       </section>
-      <section>  <!--"about us" section-->
-        <span></span>  <!--future huge dash here-->
+      <section class="about-us-section">
         <h2>О нас</h2>
-        <ul>
+        <ul class="about-us-list">
           <li>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</li>
           <li>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
-            <ul>
+            <ul class="transport-partners">
               <li><a href="javascript:void(0);">Деловые Линии</a></li>
               <li><a href="javascript:void(0);">Автотрейдинг</a></li>
               <li><a href="javascript:void(0);">ЖелДорЭкспедиция</a></li>
             </ul>
           </li>
         </ul>
-        <a href="javascript:void(0);">подробнее о нас</a>
+        <a class="about-us" href="javascript:void(0);">подробнее о нас</a>
       </section>
-      <section>  <!--"contacts" section-->
-        <span><!--future huge dash here--></span>
+      <section class="contacts-section">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспобоность покупки. Всякое бывает.</p>
-        <button type="button" title="Открыть интерактивную карту"><img src="" width="560" height="222" alt="магазин на карте"></button>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>проверить работоспобоность покупки. Всякое бывает.</p>
+        <button class="map-unfold" type="button" title="Открыть интерактивную карту"><img src="img/other/map.png" width="560" height="222" alt="магазин на карте"></button>
         <br>
-        <button type="button">напишите нам</button>
+        <button class="feedback" type="button">напишите нам</button>
         <br>
         <button type="button" title="Закрыть" aria-label="Закрыть форму обратной связи"><span><!--future cross here--></span></button>  <!--close window button-->
         <br>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">  <!--"message us" form-->
+        <form class="feedback-form visually-hidden" action="https://echo.htmlacademy.ru/courses" method="post">  <!--"message us" form-->
           <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name" required></label>
           <br>
           <label>Ваш e-mail:<br><input type="email" placeholder="email@example.com" name="email" required></label>
@@ -182,27 +167,28 @@
         </form>
       </section>
     </main>
-    <footer>
-      <nav>
-        <a aria-label="на главную">DEVICE</a>  <!--logo-->
+    <footer class="main-footer">
+      <nav class="nav-section footer-nav">
+        <a class="logo" aria-label="на главную"><img src="img/content/DEVICE_yellow.svg" width="163" height="35" alt="DEVICE"></a>
         <p>г.Москва, ул.Строителей, 15</p>
         <p>Тел.: +7 (495) 495-95-95</p>
-        <ul>
-          <li><a href="javascript:void(0);">доставка</a></li>
-          <li><a href="javascript:void(0);">гарантия</a></li>
-          <li><a href="javascript:void(0);">контакты</a></li>
-        </ul>
-        <a href="javascript:void(0);"><span><!--future "user" icon--></span>Войти</a>
-        <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-        <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+        <div class="site-nav footer-nav">
+          <a href="javascript:void(0);">доставка</a>
+          <a href="javascript:void(0);">гарантия</a>
+          <a href="javascript:void(0);">контакты</a>
+        </div>
+        <div class="user-nav footer-nav">
+          <a href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
+          <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+          <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+        </div>
       </nav>
-      <span></span><!--future huge yellow dash here-->
-      <ul>
-        <li><span><a href="javascript:void(0);" title="Мы на Facebook">Facebook</a></span></li>
-        <li><span><a href="javascript:void(0);" title="Мы в Instagram">Instagram</a></span></li>
-        <li><span><a href="javascript:void(0);" title="Мы в Twitter">Twitter</a></span></li>
-      </ul>
-      <span><a href="https://up.htmlacademy.ru/htmlcss/28" aria-label="логотип HTML academy" title="Сделано в HTML Academy"><!--logo--></a></span>
+      <div class="socials">
+        <a href="javascript:void(0);" title="Мы на Facebook"><img src="img/icon/icons/facebook_icon.svg" width="32" height="32" alt="Facebook"></a>
+        <a href="javascript:void(0);" title="Мы в Instagram"><img src="img/icon/icons/insta_icon.svg" width="32" height="32" alt="Instagram"></a>
+        <a href="javascript:void(0);" title="Мы в Twitter"><img src="img/icon/icons/twitter_icon.svg" width="32" height="32" alt="Twitter"></a>
+      </div>
+      <a class="other-socials" href="https://up.htmlacademy.ru/htmlcss/28" aria-label="логотип HTML academy" title="Сделано в HTML Academy"><img src="img/icon/icons/academy_logo.svg" alt="HTML Academy" width="26.94" height="34"></a>
     </footer>
   </body>
 </html>
