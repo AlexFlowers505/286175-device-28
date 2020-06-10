@@ -145,16 +145,17 @@ img {
 .logo[href] img:active {
   opacity: 0.3;
 }
-/*  Search form: */
+/*  Search form input: */
 .search-form input {
   font-family: "OpenSans";
+  position: relative;
   font-weight: 300;
   font-size: 15px;
   font-weight: 20px;
   color: rgba(0, 0, 0, 0.3);
   background-color: transparent;
 
-  width: 318px;
+  width: 332px;
   padding: 15px 5px 15px 22px;
   margin-right: 0px;
   border: 0px solid;
@@ -164,8 +165,12 @@ img {
 }
 .search-form input:focus,
 .search-form input:active {
-  border-bottom: 2px solid var(--basic-black);
   color: var(--basic-black);
+}
+/*  Search form button: */
+.search-form input:focus~button,
+.search-form input:active~button {
+  opacity: 1;
 }
 .search-form button {
   font-family: "OpenSans";
@@ -175,20 +180,44 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: transparent;
-  border: 2px solid var(--basic-black);
+  border: 0px;
+  box-shadow: inset 0px 0px 0px 2px var(--basic-black);
   padding: 15px 17px;
-  margin: 0px 0px 0px -5px;
+  margin: 0px 0px 0px 0px;
+  opacity: 0;
+  position: relative;
 }
-.search-form button:hover,
+.search-form button:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
 .search-form button:focus {
   color: var(--basic-white);
   background-color: var(--basic-black);
+  opacity: 1;
 }
 .search-form button:active {
   color: rgba(255,255,255,0.3);
   background-color: var(--basic-black);
+  opacity: 1;
 }
-
+/*  Search form border-bottom element: */
+.search-form {
+  position: relative;
+}
+.search-form .border-bottom {
+  width: 440px;
+  height: 2px;
+  background-color: var(--basic-black);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0;
+}
+.search-form>*:focus~.border-bottom,
+.search-form>*:active~.border-bottom {
+  opacity: 1;
+}
 /*  footer (completion)  */
 .main-footer {
   background-color: var(--dark-grey);

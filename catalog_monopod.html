@@ -25,9 +25,10 @@
           <a href="javascript:void(0);">контакты</a>
         </div>
         <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <span><!--search_icon--></span>
-          <input required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+          <label for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="16" height="16" alt="Поиск"></label>
+          <input id="search-input-field" required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
           <button type="submit">найти</button>
+          <div class="border-bottom"></div>
         </form>
         <div class="user-nav header-nav">
           <a href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
@@ -36,47 +37,53 @@
           <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
         </div>
       </nav>
-    </header>    <main>
-      <section> <!--inner page nav section-->
+    </header>
+    <main>
+      <section class="breadcrumbs-section"> <!--inner page nav section-->
         <h1>Моноподы для селфи</h1>
-        <ul class="pages-path">
+        <ul class="pages-path breadcrumbs">
           <li><a href="index.html" title="вернуться на Главную">Главная</a></li>
           <li><a href="javascript:void(0);" title="вернуться в Каталог товаров">Каталог товаров</a></li>
           <li><a title="Вы здесь">Моноподы для селфи</a></li>
         </ul>
       </section>
-      <form class="filter-form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <p>фильтр:</p>
-        <p class="price-range-label">Стоимость</p>
-        <div><!--price_range_slider--></div>
-        <br>
-        <fieldset class="color-range range">
-          <legend>Цвет</legend>
-            <input id="black-products-checkbox" type="checkbox" name="black"><label for="black-products-checkbox">Чёрный</label><br>
-            <input id="white-products-checkbox" type="checkbox" name="white"><label for="white-products-checkbox">Белый</label><br>
-            <input id="blue-products-checkbox" type="checkbox" name="blue"><label for="blue-products-checkbox">Синий</label><br>
-            <input id="red-products-checkbox" type="checkbox" name="red"><label for="red-products-checkbox">Красный</label><br>
-            <input id="pink-products-checkbox" type="checkbox" name="pink"><label for="pink-products-checkbox">Розовый</label><br>
-        </fieldset>
-        <p class="bluetooth-range range">Bluetooth</p>
-        <input id="bluetooth-radio-yes" type="radio" name="Bluetooth" value="yes"><label for="bluetooth-radio-yes">Есть</label>
-        <br>
-        <input id="bluetooth-radio-no" type="radio" name="Bluetooth" value="no"><label for="bluetooth-radio-no">Нет</label>
-        <br>
-        <button aria-label="Применить фильтр" type="submit">показать</button>
-      </form>
-      <form action="https://echo.htmlacademy.ru/courses" method="get">  <!--sorting-->
-        <p>сортировка:</p>
-        <ul>
-          <li><button type="submit" value="sort_by_price">По цене</button></li>
-          <li><button type="submit" value="sort_by_type">По типу</button></li>
-          <li><button type="submit" value="sort_by_popularity">По популярности</button></li>
-        </ul>
-        <ul>  <!--ascending order-->
-          <li><button title="по возрастанию" aria-label="сортировать по возрастанию" type="submit" value="ascending"></button></li>
-          <li><button title="по убыванию" aria-label="сортировать по убыванию" type="submit" value="descending"></button></li>
-        </ul>
-      </form>
+      <section class="filter-section">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <p>фильтр:</p>
+          <fieldset class="price-range">
+            <legend>Стоимость</legend>
+            <div><!--price_range_slider--></div>
+          </fieldset>
+          <fieldset class="color-range range">
+            <legend>Цвет</legend>
+              <input id="black-products-checkbox" type="checkbox" name="color" value="black"><label for="black-products-checkbox">Чёрный</label><br>
+              <input id="white-products-checkbox" type="checkbox" name="color" value="white"><label for="white-products-checkbox">Белый</label><br>
+              <input id="blue-products-checkbox" type="checkbox" name="color" value="blue"><label for="blue-products-checkbox">Синий</label><br>
+              <input id="red-products-checkbox" type="checkbox" name="color" value="red"><label for="red-products-checkbox">Красный</label><br>
+              <input id="pink-products-checkbox" type="checkbox" name="color" value="pink"><label for="pink-products-checkbox">Розовый</label><br>
+          </fieldset>
+          <p class="bluetooth-range range">Bluetooth</p>
+          <input id="bluetooth-radio-yes" type="radio" name="Bluetooth" value="bluetooth-yes"><label for="bluetooth-radio-yes">Есть</label>
+          <input id="bluetooth-radio-no" type="radio" name="Bluetooth" value="bluetooth-no"><label for="bluetooth-radio-no">Нет</label>
+          <button aria-label="Применить фильтр" type="submit">показать</button>
+        </form>
+      </section>
+      <section class="sort-section">
+        <h2 class="visually-hidden">Сортировка товаров</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="get">  <!--sorting-->
+          <p>сортировка:</p>
+          <ul>
+            <li><button type="submit" value="sort_by_price">По цене</button></li>
+            <li><button type="submit" value="sort_by_type">По типу</button></li>
+            <li><button type="submit" value="sort_by_popularity">По популярности</button></li>
+          </ul>
+          <ul>  <!--ascending order-->
+            <li><button title="по возрастанию" aria-label="сортировать по возрастанию" type="submit" value="ascending"></button></li>
+            <li><button title="по убыванию" aria-label="сортировать по убыванию" type="submit" value="descending"></button></li>
+          </ul>
+        </form>
+      </section>
       <section class="products-display-section">
         <h2 class="visually-hidden">Просмотр товаров</h2>
         <ul class="products-display">
@@ -85,7 +92,7 @@
               <img src="img/content/MP_amateur.png" width="360" height="380" alt="Любительская селфи-палка">
               <h3>Любительская селфи-палка</h3>
             </a>
-            <div class="catalog-item-hover">
+            <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
@@ -96,7 +103,7 @@
               <img src="img/content/MP_pro.png" width="360" height="380" alt="Профессиональная селфи-палка">
               <h3>Профессиональная селфи-палка</h3>
             </a>
-            <div class="catalog-item-hover">
+            <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
@@ -107,7 +114,7 @@
               <img src="img/content/MP_underwater.png" width="360" height="380" alt="Непотопляемая селфи-палка">
               <h3>Непотопляемая селфи-палка</h3>
             </a>
-            <div class="catalog-item-hover">
+            <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
@@ -118,7 +125,7 @@
               <img src="img/content/MP_hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <h3>Селфи-палка «Следуй за мной»</h3>
             </a>
-            <div class="catalog-item-hover">
+            <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
