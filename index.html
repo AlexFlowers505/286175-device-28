@@ -8,21 +8,21 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="nav-section header-nav">
+      <nav class="nav-section-header header-nav">
         <a class="logo header-logo" aria-label="на главную"><img src="img/content/DEVICE.svg" width="163" height="35" alt="DEVICE"></a>
-        <div class="user-nav header-nav">
+        <div class="user-nav-header header-nav">
           <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-            <label for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="13" height="13" alt="Поиск"></label>
-            <input id="search-input-field" required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-            <button type="submit">найти</button>
+            <label class="search-label" for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="13" height="13" alt="Поиск"></label>
+            <input id="search-input-field" class="search-input" required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">найти</button>
             <div class="border-bottom"></div>
           </form>
           <a class="profile-link sign-in" href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
           <a class="comparison-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
           <a class="cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
         </div>
-        <div class="site-nav header-nav">
-          <a class="catalog-link" href="javascript:void(0);">каталог товаров</a>
+        <div class="site-nav-header header-nav">
+          <a class="catalog-link" href="catalog_monopod.html">каталог товаров</a>
           <div class="catalog-submenu">
             <a href="javascript:void(0);">Виртуальная реальность</a>
             <a href="catalog_monopod.html">Моноподы для селфи</a>
@@ -153,7 +153,7 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <button class="map-unfold" type="button" title="Открыть интерактивную карту"><img src="img/other/map.png" width="560" height="222" alt="магазин на карте"></button>
         <br>
-        <button class="feedback" type="button">напишите нам</button>
+        <button class="feedback-button" type="button">напишите нам</button>
         <button class="close-button visually-hidden" type="button" title="Закрыть" aria-label="Закрыть форму обратной связи"><span><!--future cross here--></span></button>  <!--close window button-->
         <form class="feedback-form visually-hidden" action="https://echo.htmlacademy.ru/courses" method="post">  <!--"message us" form-->
           <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name" required></label>
@@ -167,21 +167,19 @@
       </section>
     </main>
     <footer class="main-footer">
-      <nav class="nav-section footer-nav">
-        <a class="logo" aria-label="на главную"><img src="img/content/DEVICE_yellow.svg" width="163" height="35" alt="DEVICE"></a>
-        <p class="physical-address">г. Москва, ул. Строителей, 15</p>
-        <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
-        <div class="site-nav footer-nav">
-          <a href="javascript:void(0);">доставка</a>
-          <a href="javascript:void(0);">гарантия</a>
-          <a href="javascript:void(0);">контакты</a>
-        </div>
-        <div class="user-nav footer-nav">
-          <a href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
-          <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-          <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
-        </div>
-      </nav>
+      <a class="logo" aria-label="на главную"><img src="img/content/DEVICE_yellow.svg" width="163" height="35" alt="DEVICE"></a>
+      <div class="site-nav-footer footer-nav">
+        <a href="javascript:void(0);">доставка</a>
+        <a href="javascript:void(0);">гарантия</a>
+        <a href="javascript:void(0);">контакты</a>
+      </div>
+      <div class="user-nav-footer footer-nav">
+        <a href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
+        <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+        <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+      </div>
+      <p class="physical-address">г. Москва, ул. Строителей, 15</p>
+      <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
       <div class="socials-wrapper">
         <div class="socials">
           <a href="javascript:void(0);" title="Мы на Facebook"><img src="img/icon/icons/facebook_icon.svg" width="32" height="32" alt="Facebook"></a>

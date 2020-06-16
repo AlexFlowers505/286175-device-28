@@ -8,13 +8,13 @@
   </head>
   <body class="inner-page">
     <header class="main-header">
-      <nav class="nav-section header-nav">
+      <nav class="nav-section-header header-nav">
         <a href="index.html" class="logo header-logo" aria-label="на главную"><img src="img/content/DEVICE.svg" width="163" height="35" alt="DEVICE"></a>
-        <div class="user-nav header-nav">
+        <div class="user-nav-header header-nav">
           <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-            <label for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="12" height="12" alt="Поиск"></label>
-            <input id="search-input-field" required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-            <button type="submit">найти</button>
+            <label class="search-label" for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="12" height="12" alt="Поиск"></label>
+            <input id="search-input-field" class="search-input" required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">найти</button>
             <div class="border-bottom"></div>
           </form>
           <div class="profile-related">
@@ -24,8 +24,8 @@
           <a class="comparison-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
           <a class="cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
         </div>
-        <div class="site-nav header-nav">
-          <a class="catalog-link" href="javascript:void(0);">каталог товаров</a>
+        <div class="site-nav-header header-nav">
+          <a class="catalog-link" href="catalog_monopod.html">каталог товаров</a>
           <div class="catalog-submenu">
             <a href="javascript:void(0);">Виртуальная реальность</a>
             <a>Моноподы для селфи</a>
@@ -42,9 +42,9 @@
     <main class="main-monopod">
       <section class="breadcrumbs-section">
         <h1>Моноподы для селфи</h1>
-        <ul class="pages-path breadcrumbs">
+        <ul class="breadcrumbs">
           <li><a href="index.html" title="вернуться на Главную">Главная</a></li>
-          <li><a href="javascript:void(0);" title="вернуться в Каталог товаров">Каталог товаров</a></li>
+          <li><a href="catalog_monopod.html" title="вернуться в Каталог товаров">Каталог товаров</a></li>
           <li><a title="Вы здесь">Моноподы для селфи</a></li>
         </ul>
       </section>
@@ -93,7 +93,7 @@
               <img src="img/content/MP_amateur.png" width="360" height="380" alt="Любительская селфи-палка">
               <h3>Любительская селфи-палка</h3>
             </a>
-            <div class="visually-hidden overlay">
+            <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
@@ -102,9 +102,9 @@
           <li class="product-item">
             <a href="javascript:void(0);">
               <img src="img/content/MP_pro.png" width="360" height="380" alt="Профессиональная селфи-палка">
-              <h3>Профессиональная <br>селфи-палка</h3>
+              <h3>Профессиональная <span class="no-word-break">селфи-палка</span></h3>
             </a>
-            <div class="visually-hidden overlay">
+            <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
@@ -115,7 +115,7 @@
               <img src="img/content/MP_underwater.png" width="360" height="380" alt="Непотопляемая селфи-палка">
               <h3>Непотопляемая селфи-палка</h3>
             </a>
-            <div class="visually-hidden overlay">
+            <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
@@ -126,7 +126,7 @@
               <img src="img/content/MP_hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <h3>Селфи-палка «Следуй за мной»</h3>
             </a>
-            <div class="visually-hidden overlay">
+            <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
@@ -145,22 +145,20 @@
       </div>
     </main>
     <footer class="main-footer">
-      <nav class="nav-section footer-nav">
-        <a href="index.html" class="logo" aria-label="на главную"><img src="img/content/DEVICE_yellow.svg" width="163" height="35" alt="DEVICE"></a>
-        <p class="physical-address">г. Москва, ул. Строителей, 15</p>
-        <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
-        <div class="site-nav footer-nav">
-          <a href="javascript:void(0);">доставка</a>
-          <a href="javascript:void(0);">гарантия</a>
-          <a href="javascript:void(0);">контакты</a>
-        </div>
-        <div class="user-nav footer-nav">
-          <a href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
-          <form action="https://echo.htmlacademy.ru/courses" method="get"><button aria-label="Выйти из своего аккаунта" type="button">Выйти</button></form>
-          <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-          <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
-        </div>
-      </nav>
+      <a href="index.html" class="logo" aria-label="на главную"><img src="img/content/DEVICE_yellow.svg" width="163" height="35" alt="DEVICE"></a>
+      <div class="site-nav-footer footer-nav">
+        <a href="javascript:void(0);">доставка</a>
+        <a href="javascript:void(0);">гарантия</a>
+        <a href="javascript:void(0);">контакты</a>
+      </div>
+      <div class="user-nav-footer footer-nav">
+        <a href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
+        <form action="https://echo.htmlacademy.ru/courses" method="get"><button aria-label="Выйти из своего аккаунта" type="button">Выйти</button></form>
+        <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+        <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+      </div>
+      <p class="physical-address">г. Москва, ул. Строителей, 15</p>
+      <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
       <div class="socials-wrapper">
         <div class="socials">
           <a href="javascript:void(0);" title="Мы на Facebook"><img src="img/icon/icons/facebook_icon.svg" width="32" height="32" alt="Facebook"></a>
