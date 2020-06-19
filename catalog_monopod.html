@@ -12,17 +12,17 @@
         <a href="index.html" class="logo header-logo" aria-label="на главную"><img src="img/content/DEVICE.svg" width="163" height="35" alt="DEVICE"></a>
         <div class="user-nav-header header-nav">
           <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-            <label class="search-label" for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="12" height="12" alt="Поиск"></label>
+            <label class="search-label" for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="13" height="13" alt="Поиск"></label>
             <input id="search-input-field" class="search-input" required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">найти</button>
             <div class="border-bottom"></div>
           </form>
           <div class="profile-related">
-            <a class="profile-link" href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
+            <a class="header-login-link login-link logged-in" href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
             <form action="https://echo.htmlacademy.ru/courses" method="get"><button class="sign-out" aria-label="Выйти из своего аккаунта" type="button">Выйти</button></form>
           </div>
-          <a class="comparison-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-          <a class="cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+          <a class="header-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+          <a class="header-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
         </div>
         <div class="site-nav-header header-nav">
           <a class="catalog-link" href="catalog_monopod.html">каталог товаров</a>
@@ -37,6 +37,7 @@
           <a href="javascript:void(0);">доставка</a>
           <a href="javascript:void(0);">гарантия</a>
           <a href="javascript:void(0);">контакты</a>
+        </div>
       </nav>
     </header>
     <main class="main-monopod">
@@ -45,92 +46,101 @@
         <ul class="breadcrumbs">
           <li><a href="index.html" title="вернуться на Главную">Главная</a></li>
           <li><a href="catalog_monopod.html" title="вернуться в Каталог товаров">Каталог товаров</a></li>
-          <li><a title="Вы здесь">Моноподы для селфи</a></li>
+          <li><a class="current-page" title="Вы здесь">Моноподы для селфи</a></li>
         </ul>
       </section>
       <section class="filter-section">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <p>фильтр:</p>
-          <fieldset class="price-range">
+          <p class="filter-section-label">фильтр:</p>
+          <fieldset class="price-range-filter">
             <legend>Стоимость</legend>
-            <div><!--price_range_slider--></div>
+            <div class="price-range-wrapper">
+              <div class="price-range-slider">
+                <div class="slider-full-bar">
+                  <div class="slider-start-point-bar" style="width: 0%"></div>
+                  <div class="slider-progress-bar" style="width: 63%"></div>
+                </div>
+                <div class="toggle-wrapper">
+                  <div class="toggle toggle-min" style="left: 0%" tabindex="0"></div>
+                  <div class="toggle toggle-max" style="left: 63%" tabindex="0"></div>
+                </div>
+              </div>
+              <div class="price-controls-inputs">
+                <label>от<input type="number" name="start-price" value="0"></label>
+                <label>до<input type="number" name="end-price" value="5000"></label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="color-range range">
             <legend>Цвет</legend>
-              <input id="black-products-checkbox" type="checkbox" name="color" value="black"><label for="black-products-checkbox">Чёрный</label><br>
-              <input id="white-products-checkbox" type="checkbox" name="color" value="white"><label for="white-products-checkbox">Белый</label><br>
-              <input id="blue-products-checkbox" type="checkbox" name="color" value="blue"><label for="blue-products-checkbox">Синий</label><br>
-              <input id="red-products-checkbox" type="checkbox" name="color" value="red"><label for="red-products-checkbox">Красный</label><br>
-              <input id="pink-products-checkbox" type="checkbox" name="color" value="pink"><label for="pink-products-checkbox">Розовый</label><br>
+              <input class="color-input input-states-set-1 visually-hidden" id="black-products-checkbox" checked type="checkbox" name="color" value="black"><label for="black-products-checkbox">Чёрный</label><br>
+              <input class="color-input input-states-set-1 visually-hidden" id="white-products-checkbox" type="checkbox" name="color" value="white"><label for="white-products-checkbox">Белый</label><br>
+              <input class="color-input input-states-set-1 visually-hidden" id="blue-products-checkbox" checked type="checkbox" name="color" value="blue"><label for="blue-products-checkbox">Синий</label><br>
+              <input class="color-input input-states-set-1 visually-hidden" id="red-products-checkbox" checked type="checkbox" name="color" value="red"><label for="red-products-checkbox">Красный</label><br>
+              <input class="color-input input-states-set-1 visually-hidden" id="pink-products-checkbox" type="checkbox" name="color" value="pink"><label for="pink-products-checkbox">Розовый</label><br>
           </fieldset>
-          <p class="bluetooth-range range">Bluetooth</p>
-          <input id="bluetooth-radio-yes" type="radio" name="Bluetooth" value="bluetooth-yes"><label for="bluetooth-radio-yes">Есть</label>
-          <input id="bluetooth-radio-no" type="radio" name="Bluetooth" value="bluetooth-no"><label for="bluetooth-radio-no">Нет</label>
+          <fieldset class="bluetooth-range range">
+            <legend>Bluetooth</legend>
+            <input class="bluetooth-radio input-states-set-1 visually-hidden" checked id="bluetooth-radio-yes" type="radio" name="Bluetooth" value="bluetooth-yes"><label for="bluetooth-radio-yes">Есть</label>
+            <input class="bluetooth-radio input-states-set-1 visually-hidden" id="bluetooth-radio-no" type="radio" name="Bluetooth" value="bluetooth-no"><label for="bluetooth-radio-no">Нет</label>
+          </fieldset>
           <button aria-label="Применить фильтр" type="submit">показать</button>
         </form>
       </section>
       <section class="sort-section">
         <h2 class="visually-hidden">Сортировка товаров</h2>
-        <form action="https://echo.htmlacademy.ru/courses" method="get">  <!--sorting-->
-          <p>сортировка:</p>
-          <ul class="sort-options">
-            <li><button type="submit" value="sort_by_price">По цене</button></li>
-            <li><button type="submit" value="sort_by_type">По типу</button></li>
-            <li><button type="submit" value="sort_by_popularity">По популярности</button></li>
-          </ul>
-          <ul class="sort-ascending">  <!--ascending order-->
-            <li><button title="по возрастанию" aria-label="сортировать по возрастанию" type="submit" value="ascending"></button></li>
-            <li><button title="по убыванию" aria-label="сортировать по убыванию" type="submit" value="descending"></button></li>
-          </ul>
+        <p>сортировка:</p>
+        <form class="sort-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <fieldset class="sort-options">
+            <button class="sort-option-button current-button" type="submit" value="sort_by_price">По цене</button>
+            <button class="sort-option-button" type="submit" value="sort_by_type">По типу</button>
+            <button class="sort-option-button" type="submit" value="sort_by_popularity">По популярности</button>
+          </fieldset>
+          <fieldset class="sort-ascending">
+            <button class="sort-order-button current-button" title="по возрастанию" aria-label="сортировать по возрастанию" type="submit" value="ascending"></button>
+            <button class="sort-order-button" title="по убыванию" aria-label="сортировать по убыванию" type="submit" value="descending"></button>
+          </fieldset>
         </form>
       </section>
       <section class="products-display-section">
         <h2 class="visually-hidden">Просмотр товаров</h2>
         <ul class="products-display">
           <li class="product-item">
-            <a href="javascript:void(0);">
-              <img src="img/content/MP_amateur.png" width="360" height="380" alt="Любительская селфи-палка">
-              <h3>Любительская селфи-палка</h3>
-            </a>
+            <a href="javascript:void(0);"><img src="img/content/MP_amateur.png" width="360" height="380" alt="Любительская селфи-палка"></a>
+            <a href="javascript:void(0);"><h3>Любительская селфи-палка</h3></a>
             <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
-            <p>500 руб.</p>
+            <p class="product-price">500 руб.</p>
           </li>
           <li class="product-item">
-            <a href="javascript:void(0);">
-              <img src="img/content/MP_pro.png" width="360" height="380" alt="Профессиональная селфи-палка">
-              <h3>Профессиональная <span class="no-word-break">селфи-палка</span></h3>
-            </a>
+            <a href="javascript:void(0);"><img src="img/content/MP_pro.png" width="360" height="380" alt="Профессиональная селфи-палка"></a>
+            <a href="javascript:void(0);"><h3>Профессиональная <span class="no-word-break">селфи-палка</span></h3></a>
             <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
-            <p>1500 руб.</p>
+            <p class="product-price">1 500 руб.</p>
           </li>
           <li class="product-item">
-            <a href="javascript:void(0);">
-              <img src="img/content/MP_underwater.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <h3>Непотопляемая селфи-палка</h3>
-            </a>
+            <a href="javascript:void(0);"><img src="img/content/MP_underwater.png" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+            <a href="javascript:void(0);"><h3>Непотопляемая селфи-палка</h3></a>
             <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
-            <p>2500 руб.</p>
+            <p class="product-price">2 500 руб.</p>
           </li>
           <li class="product-item">
-            <a class="newProduct" href="javascript:void(0);">
-              <img src="img/content/MP_hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              <h3>Селфи-палка «Следуй за мной»</h3>
-            </a>
+            <a href="javascript:void(0);"><img src="img/content/MP_hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
+            <a href="javascript:void(0);"><h3 class="newProduct">Селфи-палка «Следуй за мной»</h3></a>
             <div class="overlay">
               <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
-            <p>4900 руб.</p>
+            <p class="product-price">4 900 руб.</p>
           </li>
         </ul>
       </section>
@@ -152,10 +162,10 @@
         <a href="javascript:void(0);">контакты</a>
       </div>
       <div class="user-nav-footer footer-nav">
-        <a href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
-        <form action="https://echo.htmlacademy.ru/courses" method="get"><button aria-label="Выйти из своего аккаунта" type="button">Выйти</button></form>
-        <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-        <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+        <a class="footer-login-link login-link logged-in" href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
+        <form class="footer-logout-form" action="https://echo.htmlacademy.ru/courses" method="get"><button aria-label="Выйти из своего аккаунта" type="button">Выйти</button></form>
+        <a class="footer-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+        <a class="footer-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
       </div>
       <p class="physical-address">г. Москва, ул. Строителей, 15</p>
       <p class="phone-number">Тел.: +7 (495) 495-95-95</p>

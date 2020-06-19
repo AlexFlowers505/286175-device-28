@@ -17,9 +17,9 @@
             <button class="search-button" type="submit">найти</button>
             <div class="border-bottom"></div>
           </form>
-          <a class="profile-link sign-in" href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
-          <a class="comparison-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-          <a class="cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+          <a class="header-login-link login-link" href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
+          <a class="header-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+          <a class="header-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
         </div>
         <div class="site-nav-header header-nav">
           <a class="catalog-link" href="catalog_monopod.html">каталог товаров</a>
@@ -42,96 +42,90 @@
       <section class="ad-slider-section">
         <h2 class="visually-hidden">Топовые товары</h2>
         <ul class="slider-controls">
-          <li><button aria-label="первый слайд" type="button"></button></li>
+          <li><button class="current-button" aria-label="первый слайд" type="button"></button></li>
           <li><button aria-label="второй слайд" type="button"></button></li>
           <li><button aria-label="третий слайд" type="button"></button></li>
         </ul>
         <ul class="slides">
-          <li class="slide">
-            <p>01</p>
-            <a aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_monopod.png" alt="8-метровая селфи-палка" width="384" height="486"></a>
-            <a aria-label="Перейти на страницу товара" href="javascript:void(0);">Делай селфи, как Бен Стиллер!</a>
+          <li class="slide slide-1 current-slide">
+            <a class="slide-pic" aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_monopod.png" alt="8-метровая селфи-палка" width="384" height="486"></a>
+            <a class="slide-tag-line" aria-label="Перейти на страницу товара" href="javascript:void(0);">Делай селфи, <span class="no-word-break">как Бен Стиллер!</span></a>
             <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <ul class="characteristics">
               <li>8,5 м</li>
-              <li>5 кг</li>
-              <li>Карбон</li>
               <li>Длина палки</li>
+              <li>5 кг</li>
               <li>Вес палки</li>
+              <li>Карбон</li>
               <li>Материал</li>
             </ul>
-            <a href="javascript:void(0);">подробнее</a>
+            <a class="more-info-link button-style1" href="javascript:void(0);">подробнее</a>
           </li>
-          <li class="slide">  <!--fitness tracker-->
-            <p>02</p>
-            <a aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_tracker.png" alt="фитнес-браслет 001" width="345" height="485"></a><!--add dimensions-->
-            <a aria-label="Перейти на страницу товара" href="javascript:void(0);">Худеем правильно!</a>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не<br>
+          <li class="slide slide-2">
+            <a class="slide-pic" aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_tracker.png" alt="фитнес-браслет 001" width="345" height="485"></a><!--add dimensions-->
+            <a class="slide-tag-line" aria-label="Перейти на страницу товара" href="javascript:void(0);">Худеем правильно!</a>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не
                пропускать занятия и соблюдать диету.</p>
             <ul class="characteristics">
               <li>48 часов</li>
               <li>Без подзарядки</li>
             </ul>
-            <a href="javascript:void(0);">подробнее</a>
+            <a class="more-info-link button-style1" href="javascript:void(0);">подробнее</a>
           </li>
-          <li class="slide">  <!--quadcopter-->
-            <p>03</p>
-            <a aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_quadrocopter.png" alt="Квадрокоптер с лазером" width="526" height="334"></a><!--add dimensions-->
-            <a aria-label="Перейти на страницу товара" href="javascript:void(0);">Порхает как бабочка, жалит как пчела!</a>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным<br>
-               лазером, замаскированным под обычную камеру.</p>
+          <li class="slide slide-3">
+            <a class="slide-pic" aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_quadrocopter.png" alt="Квадрокоптер с лазером" width="526" height="334"></a><!--add dimensions-->
+            <a class="slide-tag-line" aria-label="Перейти на страницу товара" href="javascript:void(0);">Порхает как бабочка, жалит как пчела!</a>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <ul class="characteristics">
               <li>800 м</li>
-              <li>50 м</li>
               <li>Дальность полета</li>
+              <li>50 м</li>
               <li>Радиус поражения</li>
             </ul>
-            <a href="">подробнее</a>
+            <a class="more-info-link button-style1" href="">подробнее</a>
           </li>
         </ul>
       </section>
       <section class="extra-catalog-section">
         <ul class="extra-catalog">
-          <li><h3><a href="javascript:void(0);"><span><!--cathegory icon--></span>Виртуальная реальность</a></h3></li>
-          <li><h3><a href="catalog_monopod.html"><span><!--cathegory icon--></span>Моноподы для селфи</a></h3></li>
-          <li><h3><a href="javascript:void(0);"><span><!--cathegory icon--></span>Экшн-камеры</a></h3></li>
-          <li><h3><a href="javascript:void(0);"><span><!--cathegory icon--></span>Фитнес-браслеты</a></h3></li>
-          <li><h3><a href="javascript:void(0);"><span><!--cathegory icon--></span>Умные часы</a></h3></li>
-          <li><h3><a href="javascript:void(0);"><span><!--cathegory icon--></span>Квадрокоптеры</a></h3></li>
+          <li><h3><a class="VR-link" href="javascript:void(0);">Виртуальная реальность</a></h3></li>
+          <li><h3><a class="monopod-link" href="catalog_monopod.html">Моноподы <span class="no-word-break">для селфи<span class="no-word-break"></a></h3></li>
+          <li><h3><a class="cam-link" href="javascript:void(0);">Экшн-камеры</a></h3></li>
+          <li><h3><a class="tracker-link" href="javascript:void(0);">Фитнес-браслеты</a></h3></li>
+          <li><h3><a class="watches-link" href="javascript:void(0);">Умные часы</a></h3></li>
+          <li><h3><a class="quadcopter-link" href="javascript:void(0);">Квадрокоптеры</a></h3></li>
         </ul>
       </section>
       <section class="features">
         <ul class="features-names">  <!--headings list-->
-          <li><button type="button">доставка</button></li>
+          <li><button class="current-button" type="button">доставка</button></li>
           <li><button type="button">гарантия</button></li>
           <li><button type="button">кредит</button></li>
         </ul>
-        <ul class="features-description">  <!--the very features list-->
-          <li>
+        <ul class="features-description">
+          <li class="delivery-info current-info">
             <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <span><!--icon--></span>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо <span class="no-word-break">заработаем, поднимая</span> его на ваш этаж.</p>
           </li>
-          <li class="visually-hidden">
+          <li class="guarantee-info">
             <h3>Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            <span><!--icon--></span>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.</p>
+            <p>Товар, не дом, конечно же.</p>
           </li>
-          <li class="visually-hidden">
+          <li class="credit-info">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для
-               вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            <span><!--icon--></span>
+               вас наиболее выгодные <span class="no-word-break">условия кредита. Выгодные для</span> нашего банка, разумеется.</p>
           </li>
         </ul>
       </section>
       <section class="partners-section">
-        <ul>
-          <li><a href="javascript:void(0);" title="DJI"><img src="DJI_logo.png" width="260" height="100" alt="DJI"></a></li>
-          <li><a href="javascript:void(0);" title="SP Gadgets"><img src="SP_Gadgets_logo.png" width="260" height="100" alt="SP Gadgets"></a></li>
-          <li><a href="javascript:void(0);" title="GoPro"><img src="GoPro_logo.png" width="260" height="100" alt="GoPro"></a></li>
-          <li><a href="javascript:void(0);" title="VIVE"><img src="VIVE_logo.png" width="260" height="100" alt="VIVE"></a></li>
+        <ul class="partners-list">
+          <li><a href="javascript:void(0);" aria-label="DJI"><img src="img/icon/partners_logo/DJI.png" width="260" height="100" alt="DJI"></a></li>
+          <li><a href="javascript:void(0);" aria-label="SP Gadgets"><img src="img/icon/partners_logo/SP_Gadgets.png" width="260" height="100" alt="SP Gadgets"></a></li>
+          <li><a href="javascript:void(0);" aria-label="GoPro"><img src="img/icon/partners_logo/GoPro.png" width="260" height="100" alt="GoPro"></a></li>
+          <li><a href="javascript:void(0);" aria-label="VIVE"><img src="img/icon/partners_logo/VIVE.png" width="260" height="100" alt="VIVE"></a></li>
         </ul>
       </section>
       <section class="about-us-section">
@@ -146,12 +140,12 @@
             </ul>
           </li>
         </ul>
-        <a class="about-us" href="javascript:void(0);">подробнее о нас</a>
+        <a class="about-us-link button-style1" href="javascript:void(0);">подробнее о нас</a>
       </section>
       <section class="contacts-section">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <button class="map-unfold" type="button" title="Открыть интерактивную карту"><img src="img/other/map.png" width="560" height="222" alt="магазин на карте"></button>
+        <button class="map-unfold" type="button" title="Открыть интерактивную карту" aria-label="Наш адрес: город Москва, улица Строителей, дом 15"><img src="img/other/map.png" width="560" height="222" alt="город Москва, улица Строителей, дом 15"></button>
         <br>
         <button class="feedback-button" type="button">напишите нам</button>
         <button class="close-button visually-hidden" type="button" title="Закрыть" aria-label="Закрыть форму обратной связи"><span><!--future cross here--></span></button>  <!--close window button-->
@@ -174,9 +168,9 @@
         <a href="javascript:void(0);">контакты</a>
       </div>
       <div class="user-nav-footer footer-nav">
-        <a href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
-        <a aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-        <a aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+        <a class="footer-login-link login-link" href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
+        <a class="footer-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
+        <a class="footer-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
       </div>
       <p class="physical-address">г. Москва, ул. Строителей, 15</p>
       <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
