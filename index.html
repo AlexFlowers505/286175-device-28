@@ -148,16 +148,29 @@
         <button class="map-unfold" type="button" title="Открыть интерактивную карту" aria-label="Наш адрес: город Москва, улица Строителей, дом 15"><img src="img/other/map.png" width="560" height="222" alt="город Москва, улица Строителей, дом 15"></button>
         <br>
         <button class="feedback-button" type="button">напишите нам</button>
-        <button class="close-button visually-hidden" type="button" title="Закрыть" aria-label="Закрыть форму обратной связи"><span><!--future cross here--></span></button>  <!--close window button-->
-        <form class="feedback-form visually-hidden" action="https://echo.htmlacademy.ru/courses" method="post">  <!--"message us" form-->
-          <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name" required></label>
-          <br>
-          <label>Ваш e-mail:<br><input type="email" placeholder="email@example.com" name="email" required></label>
-          <br>
-          <label>Текст письма:<br><textarea name="message" placeholder="В свободной форме" rows="6" required></textarea></label>
-          <br>
-          <button type="submit">отправить</button>
+      </section>
+      <section class="modal-section feedback-modal-section" >
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <button class="feedback-close-button close-button" type="button" title="Закрыть" aria-label="Закрыть форму обратной связи"></button>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="input-label-wrapper">
+            <label for="feedback-name-input" >Ваше имя:</label>
+            <input id="feedback-name-input" type="text" placeholder="Имя Фамилия" name="name" required>
+          </div>
+          <div class="input-label-wrapper">
+            <label for="feedback-email-input">Ваш e-mail:</label>
+            <input id="feedback-email-input" type="email" placeholder="email@example.com" name="email" required>
+          </div>
+          <div class="input-label-wrapper">
+            <label for="feedback-message-input">Текст письма:</label>
+            <textarea id="feedback-message-input" name="message" placeholder="В свободной форме" rows="6" required></textarea>
+          </div>
+          <button class="feedback-send-button button-style1" type="submit">отправить</button>
         </form>
+      </section>
+      <section class="modal-section map-modal-section">
+        <button class="map-close-button close-button" type="button" title="Закрыть" aria-label="Закрыть форму обратной связи"></button>
+        <iframe class="map-interactive" aria-label="Наш адрес: город Москва, улица Строителей, дом 15" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20Russia%2C%20119311!5e0!3m2!1sen!2sus!4v1592688216310!5m2!1sen!2sus"   height="560" width="960" allowfullscreen=""></iframe>
       </section>
     </main>
     <footer class="main-footer">
