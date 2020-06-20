@@ -588,6 +588,9 @@ main {
 .extra-catalog a:focus::before {
   background-color: rgba(247, 226, 150, 0.7);
   transition-duration: 0.2s;
+  box-sizing:border-box;
+  outline: 2px white solid;
+  outline-offset: -2px;
 }
 
 /*                                                             03.6 ad-slider section grid $ design */
@@ -989,28 +992,27 @@ fieldset.sort-ascending {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
+  align-content: start;
 }
 .product-item img {
   margin-bottom: 25px;
   position: relative;
 }
-/*                                                             04.5 pagination  grid  */
-.pagination-container {
-  background-color: var(--light-grey);
-  margin-bottom: 78px;
-  padding: 25px 30px;
-  display: flex;
-  justify-content: space-between;
+
+.product-price {
+  position: relative;
+  top: 2px;
 }
-.pagination-container .pages-list {
-  list-style: none;
-  padding: 0px;
-  display: flex;
-  margin: 0px;
+.product-item:first-child .product-price {
+  left: -9px;
 }
-.pages-list li {
-  margin: 0px 15px;
+.product-item:nth-child(3) .product-price {
+  left: 5px;
 }
+.product-item:nth-child(4) .product-price {
+  left: 5px;
+}
+
 .newProduct::after {
   height: 62px;
   width: 62px;
@@ -1030,6 +1032,59 @@ fieldset.sort-ascending {
   right: 27px;
   font-size: 12px;
   line-height: 15px;
+}
+
+/*                                                             04.5 pagination  grid  */
+.pagination-container {
+  background-color: #EBEBEB;
+  margin-bottom: 78px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination-container .pages-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  margin: 0px;
+  justify-content: space-between;
+  position: relative;
+  left: 4px;
+  top: -1px;
+}
+.pagination-container a {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  height: 46px;
+  padding-top: 24px;
+
+  cursor: pointer;
+}
+.pagination-container>a {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.pagination-container>a:not([href]) {
+  cursor: default;
+}
+.pagination-container>a[href]:hover {
+  background-color: #D9D9D9;
+  transition-duration: 0.07s;
+}
+.pagination-container>a[href]:active {
+  color: #a8a8a8;
+}
+
+.pages-list li {
+  margin: 0px 15px;
+  opacity: 0.3;
+}
+.pages-list .current-page-number {
+  opacity: 1;
 }
 
 
