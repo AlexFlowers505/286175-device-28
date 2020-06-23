@@ -42,9 +42,9 @@
       <section class="ad-slider-section">
         <h2 class="visually-hidden">Топовые товары</h2>
         <ul class="slider-controls">
-          <li><button class="current-button" aria-label="первый слайд" type="button"></button></li>
-          <li><button aria-label="второй слайд" type="button"></button></li>
-          <li><button aria-label="третий слайд" type="button"></button></li>
+          <li><button class="first-button current-button" aria-label="первый слайд" type="button"></button></li>
+          <li><button class="second-button" aria-label="второй слайд" type="button"></button></li>
+          <li><button class="third-button" aria-label="третий слайд" type="button"></button></li>
         </ul>
         <ul class="slides">
           <li class="slide slide-1 current-slide">
@@ -98,10 +98,10 @@
         </ul>
       </section>
       <section class="features">
-        <ul class="features-names">  <!--headings list-->
-          <li><button class="current-button" type="button">доставка</button></li>
-          <li><button type="button">гарантия</button></li>
-          <li><button type="button">кредит</button></li>
+        <ul class="features-names">
+          <li><button class="delivery-button current-button" type="button">доставка</button></li>
+          <li><button class="guarantee-button" type="button">гарантия</button></li>
+          <li><button class="credit-button" type="button">кредит</button></li>
         </ul>
         <ul class="features-description">
           <li class="delivery-info current-info">
@@ -155,15 +155,15 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
           <div class="input-label-wrapper">
             <label for="feedback-name-input" >Ваше имя:</label>
-            <input id="feedback-name-input" type="text" placeholder="Имя Фамилия" name="name" required>
+            <input class="name-input" id="feedback-name-input" type="text" placeholder="Имя Фамилия" name="name">
           </div>
           <div class="input-label-wrapper">
             <label for="feedback-email-input">Ваш e-mail:</label>
-            <input id="feedback-email-input" type="email" placeholder="email@example.com" name="email" required>
+            <input class="email-input" id="feedback-email-input" type="email" placeholder="email@example.com" name="email">
           </div>
           <div class="input-label-wrapper">
             <label for="feedback-message-input">Текст письма:</label>
-            <textarea id="feedback-message-input" name="message" placeholder="В свободной форме" rows="6" required></textarea>
+            <textarea id="feedback-message-input" name="message" placeholder="В свободной форме" rows="6"></textarea>
           </div>
           <button class="feedback-send-button button-style1" type="submit">отправить</button>
         </form>
@@ -196,5 +196,6 @@
         <a class="other-socials" href="https://up.htmlacademy.ru/htmlcss/28" aria-label="логотип HTML academy" title="Сделано в HTML Academy"><img src="img/icon/icons/academy_logo.svg" alt="HTML Academy" width="26.94" height="34"></a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

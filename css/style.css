@@ -102,6 +102,49 @@ main {
 .main-footer {
   grid-area: footer;
 }
+/*  animations  */
+@keyframes bounce {
+  0% {transform: translate(-50%, -2000px);
+  }
+
+  70% {
+    transform: translate(-50%, 30px);
+  }
+
+  90% {
+    transform: translate(-50%, -10px);
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-50.5%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-49.5%);
+  }
+}
+
+/* top: 20%;
+left: 50%;
+transform: translate(-50%); */
+
 
 
 /*                                                              01.header grid   */
@@ -1993,6 +2036,10 @@ button.add-to-comparison:active {
 }
 .modal-section.popped {
   display: block;
+  animation: bounce 400ms ease;
+}
+.modal-section.error {
+  animation: shake 0.4s;
 }
 
 .close-button {
