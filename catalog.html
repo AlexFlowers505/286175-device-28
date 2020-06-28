@@ -10,23 +10,24 @@
     <header class="main-header">
       <nav class="nav-section-header header-nav">
         <a href="index.html" class="logo header-logo" aria-label="на главную"><img src="img/content/DEVICE.svg" width="163" height="35" alt="DEVICE"></a>
-        <div class="user-nav-header header-nav">
-          <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <ul class="user-nav-header header-nav">
+          <li><form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
             <label class="search-label" for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="13" height="13" alt="Поиск"></label>
-            <input id="search-input-field" class="search-input" required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+            <input id="search-input-field" class="search-input" type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">найти</button>
             <div class="border-bottom"></div>
-          </form>
-          <div class="profile-related">
-            <a class="header-login-link login-link logged-in" href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
+          </form></li>
+          <li><div class="profile-related">
+            <a class="header-login-link login-link logged-in" href="profile.html">Валентин Петухов</a>
             <form action="https://echo.htmlacademy.ru/courses" method="get"><button class="sign-out" aria-label="Выйти из своего аккаунта" type="button">Выйти</button></form>
-          </div>
-          <a class="header-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-          <a class="header-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
-        </div>
-        <div class="site-nav-header header-nav">
-          <a class="catalog-link" href="catalog_monopod.html">каталог товаров</a>
-          <div class="catalog-submenu">
+          </div></li>
+          <li><a class="header-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);">Сравнить</a></li>
+          <li><a class="header-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);">Корзина</a></li>
+        </ul>
+        <ul class="site-nav-header header-nav">
+          <li class="catalog-wrapper">
+            <a class="catalog-link" href="catalog.html">каталог товаров</a>
+            <div class="catalog-submenu">
             <a href="javascript:void(0);">Виртуальная реальность</a>
             <a>Моноподы для селфи</a>
             <a href="javascript:void(0);">Экшн-камеры</a>
@@ -34,10 +35,11 @@
             <a href="javascript:void(0);">Умные часы</a>
             <a href="javascript:void(0);">Квадрокоптер</a>
           </div>
-          <a href="javascript:void(0);">доставка</a>
-          <a href="javascript:void(0);">гарантия</a>
-          <a href="javascript:void(0);">контакты</a>
-        </div>
+          </li>
+          <li><a href="javascript:void(0);">доставка</a></li>
+          <li><a href="javascript:void(0);">гарантия</a></li>
+          <li><a href="javascript:void(0);">контакты</a></li>
+        </ul>
       </nav>
     </header>
     <main class="main-monopod">
@@ -45,7 +47,7 @@
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li><a href="index.html" title="вернуться на Главную">Главная</a></li>
-          <li><a href="catalog_monopod.html" title="вернуться в Каталог товаров">Каталог товаров</a></li>
+          <li><a href="catalog.html" title="вернуться в Каталог товаров">Каталог товаров</a></li>
           <li><a class="current-page" title="Вы здесь">Моноподы для селфи</a></li>
         </ul>
       </section>
@@ -62,8 +64,8 @@
                   <div class="slider-progress-bar" style="width: 63%"></div>
                 </div>
                 <div class="toggle-wrapper">
-                  <div class="toggle toggle-min" style="left: 0%" tabindex="0"></div>
-                  <div class="toggle toggle-max" style="left: 63%" tabindex="0"></div>
+                  <div class="toggle toggle-min" aria-label="минимальная цена" style="left: 0%" tabindex="0"></div>
+                  <div class="toggle toggle-max" aria-label="максимальная цена" style="left: 63%" tabindex="0"></div>
                 </div>
               </div>
               <div class="price-controls-inputs">
@@ -74,18 +76,18 @@
           </fieldset>
           <fieldset class="color-range range">
             <legend>Цвет</legend>
-              <input class="color-input input-states-set-1 visually-hidden" id="black-products-checkbox" checked type="checkbox" name="color" value="black"><label for="black-products-checkbox">Чёрный</label><br>
-              <input class="color-input input-states-set-1 visually-hidden" id="white-products-checkbox" type="checkbox" name="color" value="white"><label for="white-products-checkbox">Белый</label><br>
-              <input class="color-input input-states-set-1 visually-hidden" id="blue-products-checkbox" checked type="checkbox" name="color" value="blue"><label for="blue-products-checkbox">Синий</label><br>
-              <input class="color-input input-states-set-1 visually-hidden" id="red-products-checkbox" checked type="checkbox" name="color" value="red"><label for="red-products-checkbox">Красный</label><br>
-              <input class="color-input input-states-set-1 visually-hidden" id="pink-products-checkbox" type="checkbox" name="color" value="pink"><label for="pink-products-checkbox">Розовый</label><br>
+              <input class="color-input input-states-set-1 visually-hidden" id="black-products-checkbox" checked type="checkbox" name="color" value="black"><label for="black-products-checkbox">Чёрный</label>
+              <input class="color-input input-states-set-1 visually-hidden" id="white-products-checkbox" type="checkbox" name="color" value="white"><label for="white-products-checkbox">Белый</label>
+              <input class="color-input input-states-set-1 visually-hidden" id="blue-products-checkbox" checked type="checkbox" name="color" value="blue"><label for="blue-products-checkbox">Синий</label>
+              <input class="color-input input-states-set-1 visually-hidden" id="red-products-checkbox" checked type="checkbox" name="color" value="red"><label for="red-products-checkbox">Красный</label>
+              <input class="color-input input-states-set-1 visually-hidden" id="pink-products-checkbox" type="checkbox" name="color" value="pink"><label for="pink-products-checkbox">Розовый</label>
           </fieldset>
           <fieldset class="bluetooth-range range">
             <legend>Bluetooth</legend>
             <input class="bluetooth-radio input-states-set-1 visually-hidden" checked id="bluetooth-radio-yes" type="radio" name="Bluetooth" value="bluetooth-yes"><label for="bluetooth-radio-yes">Есть</label>
             <input class="bluetooth-radio input-states-set-1 visually-hidden" id="bluetooth-radio-no" type="radio" name="Bluetooth" value="bluetooth-no"><label for="bluetooth-radio-no">Нет</label>
           </fieldset>
-          <button aria-label="Применить фильтр" type="submit">показать</button>
+          <button class="button-animate1" aria-label="Применить фильтр" type="submit">показать</button>
         </form>
       </section>
       <section class="sort-section">
@@ -107,37 +109,37 @@
         <h2 class="visually-hidden">Просмотр товаров</h2>
         <ul class="products-display">
           <li class="product-item">
-            <a href="javascript:void(0);"><img src="img/content/MP_amateur.png" width="360" height="380" alt="Любительская селфи-палка"></a>
+            <img class="product-item-pic" src="img/content/MP_amateur.png" width="360" height="380" alt="Любительская селфи-палка">
             <a href="javascript:void(0);"><h3>Любительская селфи-палка</h3></a>
             <div class="overlay">
-              <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
+              <button class="button-animate1 add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
             <p class="product-price">500 руб.</p>
           </li>
           <li class="product-item">
-            <a href="javascript:void(0);"><img src="img/content/MP_pro.png" width="360" height="380" alt="Профессиональная селфи-палка"></a>
+            <img class="product-item-pic" src="img/content/MP_pro.png" width="360" height="380" alt="Профессиональная селфи-палка">
             <a href="javascript:void(0);"><h3>Профессиональная <span class="no-word-break">селфи-палка</span></h3></a>
             <div class="overlay">
-              <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
+              <button class="button-animate1 add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
             <p class="product-price">1 500 руб.</p>
           </li>
           <li class="product-item">
-            <a href="javascript:void(0);"><img src="img/content/MP_underwater.png" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+            <img class="product-item-pic" src="img/content/MP_underwater.png" width="360" height="380" alt="Непотопляемая селфи-палка">
             <a href="javascript:void(0);"><h3>Непотопляемая селфи-палка</h3></a>
             <div class="overlay">
-              <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
+              <button class="button-animate1 add-to-cart" type="button" aria-label="Добавить товар в корзину" tabindex="0">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
             <p class="product-price">2 500 руб.</p>
           </li>
           <li class="product-item">
-            <a href="javascript:void(0);"><img src="img/content/MP_hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
+            <img class="product-item-pic" src="img/content/MP_hand.png" width="360" height="380" alt="Селфи-палка «Следуй за мной» в форме руки">
             <a href="javascript:void(0);"><h3 class="newProduct">Селфи-палка «Следуй за мной»</h3></a>
             <div class="overlay">
-              <button class="add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
+              <button class="button-animate1 add-to-cart" type="button" aria-label="Добавить товар в корзину">в корзину</button>
               <button class="add-to-comparison" type="button">Добавить к сравнению</button>
             </div>
             <p class="product-price">4 900 руб.</p>
@@ -162,20 +164,20 @@
         <a href="javascript:void(0);">контакты</a>
       </div>
       <div class="user-nav-footer footer-nav">
-        <a class="footer-login-link login-link logged-in" href="javascript:void(0);"><span><!--user_icon--></span>Валентин Петухов</a>
+        <a class="footer-login-link login-link logged-in" href="profile.html">Валентин Петухов</a>
         <form class="footer-logout-form" action="https://echo.htmlacademy.ru/courses" method="get"><button aria-label="Выйти из своего аккаунта" type="button">Выйти</button></form>
-        <a class="footer-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-        <a class="footer-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+        <a class="footer-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);">Сравнить</a>
+        <a class="footer-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);">Корзина</a>
       </div>
       <p class="physical-address">г. Москва, ул. Строителей, 15</p>
-      <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
+      <p class="phone-number">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
       <div class="socials-wrapper">
         <div class="socials">
           <a href="javascript:void(0);" title="Мы на Facebook"><img src="img/icon/icons/facebook_icon.svg" width="32" height="32" alt="Facebook"></a>
           <a href="javascript:void(0);" title="Мы в Instagram"><img src="img/icon/icons/insta_icon.svg" width="32" height="32" alt="Instagram"></a>
           <a href="javascript:void(0);" title="Мы в Twitter"><img src="img/icon/icons/twitter_icon.svg" width="32" height="32" alt="Twitter"></a>
         </div>
-        <a class="other-socials" href="https://up.htmlacademy.ru/htmlcss/28" aria-label="логотип HTML academy" title="Сделано в HTML Academy"><img src="img/icon/icons/academy_logo.svg" alt="HTML Academy" width="26.94" height="34"></a>
+        <a class="other-socials" href="https://up.htmlacademy.ru/htmlcss/28" aria-label="логотип HTML academy" title="Сделано в HTML Academy"><img src="img/icon/icons/academy_logo.svg" alt="HTML Academy" width="27" height="34"></a>
       </div>
     </footer>
     <script src="js/script.js"></script>

@@ -10,31 +10,33 @@
     <header class="main-header">
       <nav class="nav-section-header header-nav">
         <a class="logo header-logo" aria-label="на главную"><img src="img/content/DEVICE.svg" width="163" height="35" alt="DEVICE"></a>
-        <div class="user-nav-header header-nav">
-          <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <ul class="user-nav-header header-nav">
+          <li><form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
             <label class="search-label" for="search-input-field"><img src="../img/icon/icons/search_icon.svg" width="13" height="13" alt="Поиск"></label>
-            <input id="search-input-field" class="search-input" required type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+            <input id="search-input-field" class="search-input" type="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">найти</button>
             <div class="border-bottom"></div>
-          </form>
-          <a class="header-login-link login-link" href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
-          <a class="header-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-          <a class="header-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
-        </div>
-        <div class="site-nav-header header-nav">
-          <a class="catalog-link" href="catalog_monopod.html">каталог товаров</a>
-          <div class="catalog-submenu">
-            <a href="javascript:void(0);">Виртуальная реальность</a>
-            <a href="catalog_monopod.html">Моноподы для селфи</a>
-            <a href="javascript:void(0);">Экшн-камеры</a>
-            <a href="javascript:void(0);">Фитнес-браслеты</a>
-            <a href="javascript:void(0);">Умные часы</a>
-            <a href="javascript:void(0);">Квадрокоптер</a>
-          </div>
-          <a href="javascript:void(0);">доставка</a>
-          <a href="javascript:void(0);">гарантия</a>
-          <a href="javascript:void(0);">контакты</a>
-        </div>
+          </form></li>
+          <li><a class="header-login-link login-link" href="javascript:void(0);">Войти</a></li>
+          <li><a class="header-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);">Сравнить</a></li>
+          <li><a class="header-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);">Корзина</a></li>
+        </ul>
+        <ul class="site-nav-header header-nav">
+          <li class="catalog-wrapper">
+            <a class="catalog-link" href="catalog.html">каталог товаров</a>
+            <div class="catalog-submenu">
+              <a href="javascript:void(0);">Виртуальная реальность</a>
+              <a href="catalog.html">Моноподы для селфи</a>
+              <a href="javascript:void(0);">Экшн-камеры</a>
+              <a href="javascript:void(0);">Фитнес-браслеты</a>
+              <a href="javascript:void(0);">Умные часы</a>
+              <a href="javascript:void(0);">Квадрокоптер</a>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">доставка</a></li>
+          <li><a href="javascript:void(0);">гарантия</a></li>
+          <li><a href="javascript:void(0);">контакты</a></li>
+        </ul>
       </nav>
     </header>
     <main class="main-page">
@@ -50,8 +52,10 @@
           <li class="slide slide-1 current-slide">
             <a class="slide-pic" aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_monopod.png" alt="8-метровая селфи-палка" width="384" height="486"></a>
             <a class="slide-tag-line" aria-label="Перейти на страницу товара" href="javascript:void(0);">Делай селфи, <span class="no-word-break">как Бен Стиллер!</span></a>
-            <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
-               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <div class="slide-desc">
+              <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+              <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            </div>
             <ul class="characteristics">
               <li>8,5 м</li>
               <li>Длина палки</li>
@@ -65,7 +69,7 @@
           <li class="slide slide-2">
             <a class="slide-pic" aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_tracker.png" alt="фитнес-браслет 001" width="345" height="485"></a><!--add dimensions-->
             <a class="slide-tag-line" aria-label="Перейти на страницу товара" href="javascript:void(0);">Худеем правильно!</a>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не
+            <p class="slide-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не
                пропускать занятия и соблюдать диету.</p>
             <ul class="characteristics">
               <li>48 часов</li>
@@ -76,21 +80,21 @@
           <li class="slide slide-3">
             <a class="slide-pic" aria-label="Перейти на страницу товара" href="javascript:void(0);"><img src="img/content/slider_quadrocopter.png" alt="Квадрокоптер с лазером" width="526" height="334"></a><!--add dimensions-->
             <a class="slide-tag-line" aria-label="Перейти на страницу товара" href="javascript:void(0);">Порхает как бабочка, жалит как пчела!</a>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="slide-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <ul class="characteristics">
               <li>800 м</li>
               <li>Дальность полета</li>
               <li>50 м</li>
               <li>Радиус поражения</li>
             </ul>
-            <a class="more-info-link button-style1" href="">подробнее</a>
+            <a class="more-info-link button-style1" href="javascript:void(0);">подробнее</a>
           </li>
         </ul>
       </section>
       <section class="extra-catalog-section">
         <ul class="extra-catalog">
           <li><h3><a class="VR-link" href="javascript:void(0);">Виртуальная реальность</a></h3></li>
-          <li><h3><a class="monopod-link" href="catalog_monopod.html">Моноподы <span class="no-word-break">для селфи<span class="no-word-break"></a></h3></li>
+          <li><h3><a class="monopod-link" href="catalog.html">Моноподы <span class="no-word-break">для селфи</span></a></h3></li>
           <li><h3><a class="cam-link" href="javascript:void(0);">Экшн-камеры</a></h3></li>
           <li><h3><a class="tracker-link" href="javascript:void(0);">Фитнес-браслеты</a></h3></li>
           <li><h3><a class="watches-link" href="javascript:void(0);">Умные часы</a></h3></li>
@@ -121,6 +125,7 @@
         </ul>
       </section>
       <section class="partners-section">
+        <h2 class="visually-hidden">Наши партнеры</h2>
         <ul class="partners-list">
           <li><a href="javascript:void(0);" aria-label="DJI"><img src="img/icon/partners_logo/DJI.png" width="260" height="100" alt="DJI"></a></li>
           <li><a href="javascript:void(0);" aria-label="SP Gadgets"><img src="img/icon/partners_logo/SP_Gadgets.png" width="260" height="100" alt="SP Gadgets"></a></li>
@@ -145,11 +150,11 @@
       <section class="contacts-section">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <button class="map-unfold" type="button" title="Открыть интерактивную карту" aria-label="Наш адрес: город Москва, улица Строителей, дом 15"><img src="img/other/map.png" width="560" height="222" alt="город Москва, улица Строителей, дом 15"></button>
+        <a href="https://goo.gl/maps/yBP8vgFKBArjpnM47" class="map-unfold" title="Открыть интерактивную карту" aria-label="Наш адрес: город Москва, улица Строителей, дом 15"><img src="img/other/map.png" width="560" height="222" alt="город Москва, улица Строителей, дом 15"></a>
         <br>
-        <button class="feedback-button" type="button">напишите нам</button>
+        <a href="writeus.html" class="feedback-button">напишите нам</a>
       </section>
-      <section class="modal-section feedback-modal-section" >
+      <section class="modal-section feedback-modal-section">
         <h2 class="visually-hidden">Напишите нам</h2>
         <button class="feedback-close-button close-button" type="button" title="Закрыть" aria-label="Закрыть форму обратной связи"></button>
         <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -162,13 +167,83 @@
             <input class="email-input" id="feedback-email-input" type="email" placeholder="email@example.com" name="email">
           </div>
           <div class="input-label-wrapper">
-            <label for="feedback-message-input">Текст письма:</label>
-            <textarea id="feedback-message-input" name="message" placeholder="В свободной форме" rows="6"></textarea>
+            <label for="feedback-message-input" aria-label="Текст письма в свободной форме">Текст письма:</label>
+            <textarea class="message-input" id="feedback-message-input" name="message" placeholder="В свободной форме" rows="6"></textarea>
           </div>
           <button class="feedback-send-button button-style1" type="submit">отправить</button>
         </form>
+        <div class="envelope-wrapper">
+          <svg class="envelope envelope-back" width="1020" height="610" viewBox="0 0 1020 610" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+              <rect x="30" y="30" width="960" height="550" fill="#F0C52E"/>
+            </g>
+            <defs>
+              <filter id="filter0_d" x="0" y="0" width="1020" height="610" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset/>
+                <feGaussianBlur stdDeviation="15"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+            </defs>
+          </svg>
+          <svg class="envelope envelope-base" width="1020" height="610" viewBox="0 0 1020 610" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter1_d)">
+              <path d="M30 30L510 352L990 30V580H30V30Z" fill="#F0C52E"/>
+            </g>
+            <defs>
+              <filter id="filter1_d" x="0" y="0" width="1020" height="610" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset/>
+                <feGaussianBlur stdDeviation="15"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+            </defs>
+          </svg>
+          <svg class="envelope envelope-bottom-triangle" width="990" height="373" viewBox="0 0 990 373" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter2_d)">
+              <path d="M495 20.0001L15 363L495 363L975 363L495 20.0001Z" fill="#F0C52E"/>
+            </g>
+            <defs>
+              <filter id="filter2_d" x="0" y="0" width="990" height="373" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset dy="-5"/>
+                <feGaussianBlur stdDeviation="7.5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+            </defs>
+          </svg>
+          <svg class="envelope envelope-opened" preserveAspectRatio="none" width="960" height="343" viewBox="0 0 960 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M480 8.01074e-05L0 343L480 343L960 343L480 8.01074e-05Z" fill="#F0C52E"/>
+          </svg>
+          <svg class="envelope envelope-closed" preserveAspectRatio="none" width="990" height="373" viewBox="0 0 990 373" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter3_d)">
+              <path d="M495 353L975 10H495H15L495 353Z" fill="#F0C52E"/>
+            </g>
+            <defs>
+              <filter id="filter3_d" x="0" y="0" width="990" height="373" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset dy="5"/>
+                <feGaussianBlur stdDeviation="7.5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+            </defs>
+          </svg>
+        </div>
       </section>
       <section class="modal-section map-modal-section">
+        <h2 class="visually-hidden">Интерактивная карта</h2>
         <button class="map-close-button close-button" type="button" title="Закрыть" aria-label="Закрыть форму обратной связи"></button>
         <iframe class="map-interactive" aria-label="Наш адрес: город Москва, улица Строителей, дом 15" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20Russia%2C%20119311!5e0!3m2!1sen!2sus!4v1592688216310!5m2!1sen!2sus"   height="560" width="960" allowfullscreen=""></iframe>
       </section>
@@ -181,19 +256,19 @@
         <a href="javascript:void(0);">контакты</a>
       </div>
       <div class="user-nav-footer footer-nav">
-        <a class="footer-login-link login-link" href="javascript:void(0);"><span><!--user_icon--></span>Войти</a>
-        <a class="footer-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);"><span><!--future "compare" icon--></span>Сравнить</a>
-        <a class="footer-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);"><span><!--future "cart" icon--></span>Корзина</a>
+        <a class="footer-login-link login-link" href="javascript:void(0);">Войти</a>
+        <a class="footer-compare-link compare-link" aria-label="Сравнить товары" href="javascript:void(0);">Сравнить</a>
+        <a class="footer-cart-link cart-link" aria-label="Перейти в корзину" href="javascript:void(0);">Корзина</a>
       </div>
       <p class="physical-address">г. Москва, ул. Строителей, 15</p>
-      <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
+      <p class="phone-number">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
       <div class="socials-wrapper">
         <div class="socials">
           <a href="javascript:void(0);" title="Мы на Facebook"><img src="img/icon/icons/facebook_icon.svg" width="32" height="32" alt="Facebook"></a>
           <a href="javascript:void(0);" title="Мы в Instagram"><img src="img/icon/icons/insta_icon.svg" width="32" height="32" alt="Instagram"></a>
           <a href="javascript:void(0);" title="Мы в Twitter"><img src="img/icon/icons/twitter_icon.svg" width="32" height="32" alt="Twitter"></a>
         </div>
-        <a class="other-socials" href="https://up.htmlacademy.ru/htmlcss/28" aria-label="логотип HTML academy" title="Сделано в HTML Academy"><img src="img/icon/icons/academy_logo.svg" alt="HTML Academy" width="26.94" height="34"></a>
+        <a class="other-socials" href="https://up.htmlacademy.ru/htmlcss/28" aria-label="логотип HTML academy" title="Сделано в HTML Academy"><img src="img/icon/icons/academy_logo.svg" alt="HTML Academy" width="27" height="34"></a>
       </div>
     </footer>
     <script src="js/script.js"></script>
