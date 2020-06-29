@@ -527,7 +527,7 @@ main {
   grid-template: "search account compare cart" minmax(70px, auto) / 540px 280px 120px 100px;
 }
 .user-nav-header li:last-child {
-  justify-self: end;
+  justify-self: flex-end;
 }
 .search-form {
   position: relative;
@@ -545,7 +545,7 @@ main {
   grid-template: "catalog delivery guarantee contacts" minmax(40px, auto) / 540px 160px 1fr 1fr;
 }
 .site-nav-header li:last-child {
-  justify-self: end;
+  justify-self: flex-end;
 }
 .catalog-submenu {
   display: grid;
@@ -586,7 +586,7 @@ main {
   margin-top: -5px;
 }
 .main-footer p {
-  align-self: start;
+  align-self: flex-start;
   position: relative;
   top: -4px;
 }
@@ -618,7 +618,7 @@ main {
 }
 .user-nav-footer {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .user-nav-footer a {
   margin-left: 40px;
@@ -630,7 +630,7 @@ main {
   grid-area: socials;
   display: flex;
   justify-content: flex-end;
-  align-items: start;
+  align-items: flex-start;
   margin-top: -6px;
 }
 .socials-wrapper>a:last-child {
@@ -1190,7 +1190,7 @@ main {
   padding-right: 26px;
 }
 .slide-3 .characteristics {
-  align-content: start;
+  align-content: flex-start;
 }
 /*_______________________________________________03.6.5. slider-controls design */
 .slider-controls {
@@ -1568,8 +1568,8 @@ fieldset.sort-ascending {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: start;
-  align-content: start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 .product-item img {
   margin-bottom: 30px;
@@ -2134,7 +2134,8 @@ input[disabled]+label {
 .price-controls-inputs {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .price-controls-inputs input {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -2144,8 +2145,12 @@ input[disabled]+label {
   background-color: transparent;
   border: 0px;
   -moz-appearance: textfield;
+  -webkit-appearance: textfield;
   width: 50px;
   margin-left: 2px;
+  margin-right: -100px;
+}
+.price-controls-inputs .end-price-input {
   margin-right: 29px;
 }
 /*________________________________slider-range */
@@ -2621,4 +2626,7 @@ button.add-to-comparison:active {
 }
 .map-modal-section {
   line-height: 0px;
+}
+.map-unfold img {
+  background-color: var(--light-grey-3);
 }
