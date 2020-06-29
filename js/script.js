@@ -60,31 +60,12 @@ if (main_page) {fb_form.addEventListener("submit", function(e) {
             e.preventDefault();
             localStorage.setItem("UserName", fb_username_input.value);
             feedback_section.classList.remove("error");
-            envelope[0].classList.remove("envelope");
-            envelope[0].classList.add("envelope-triggered");
-            envelope[1].classList.remove("envelope");
-            envelope[1].classList.add("envelope-triggered");
-            envelope[2].classList.remove("envelope");
-            envelope[2].classList.add("envelope-triggered");
-            envelope[3].classList.remove("envelope");
-            envelope[3].classList.add("envelope-triggered");
-            envelope[4].classList.remove("envelope");
-            envelope[4].classList.add("envelope-triggered");
-            feedback_section.classList.remove("popped");
-            feedback_section.classList.add("feedback-sent");
+            for (i=0; i < envelope.length; i++) { envelope[i].classList.toggle("envelope-triggered"); }
+            feedback_section.classList.replace("popped", "feedback-sent");
             setTimeout(function () {
               feedback_section.classList.remove("error");
               feedback_section.classList.remove("feedback-sent");
-              envelope[0].classList.remove("envelope-triggered");
-              envelope[1].classList.remove("envelope-triggered");
-              envelope[2].classList.remove("envelope-triggered");
-              envelope[3].classList.remove("envelope-triggered");
-              envelope[4].classList.remove("envelope-triggered");
-              envelope[0].classList.add("envelope");
-              envelope[1].classList.add("envelope");
-              envelope[2].classList.add("envelope");
-              envelope[3].classList.add("envelope");
-              envelope[4].classList.add("envelope");
+              for (i=0; i < envelope.length; i++) { envelope[i].classList.toggle("envelope-triggered"); }
               fb_form.submit();
             }, 2000);
           }
